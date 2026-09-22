@@ -53,15 +53,6 @@ app.get('/contact', (req, res) => {
   });
 
 
-// colors route
-app.get('/colors', (req, res) => {
-    state={colors : true}
-    head={title:"Color Pallete"}
-    res.render('colors', { state, head});
-    console.log('colors')
-  });
-
-
 
 // Start the server
 app.listen(3000, () => {
