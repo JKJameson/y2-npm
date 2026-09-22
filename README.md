@@ -1,6 +1,6 @@
-This is my project for Web Design.
+Node.js Handlebars version of website.
 
-Accessible at: https://jkjameson.github.io/web-design-course/
+Original 2025 version is accessible at: https://jkjameson.github.io/web-design-course/
 
 ## Stage 1: Sketch of home page
 ![Sketch of home page](public/images/progress/001-sketch.png)
