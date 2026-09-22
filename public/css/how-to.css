@@ -1,0 +1,232 @@
+/* Step overview pills */
+.howto-steps-overview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.howto-step-pill {
+    text-decoration: none;
+    font-family: "Bungee", sans-serif;
+    font-size: 0.85em;
+    color: var(--accent-primary);
+    border: 1.5px solid var(--accent-primary);
+    border-radius: 20px;
+    padding: 6px 16px;
+    transition: all 0.2s ease;
+}
+
+.howto-step-pill:hover {
+    background: var(--accent-primary);
+    color: #ffffff;
+}
+
+/* Step section header */
+.howto-step-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.howto-step-header h2 {
+    margin: 0;
+}
+
+.howto-step-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: var(--accent-primary);
+    color: #ffffff;
+    font-family: "Bungee", sans-serif;
+    font-size: 1.2em;
+}
+
+.content > p {
+    margin-top: 12px;
+}
+
+/* Generic cards */
+.howto-cards {
+    display: flex;
+    gap: 16px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.howto-card {
+    flex: 1;
+    min-width: 200px;
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.howto-card h3 {
+    margin-bottom: 8px;
+}
+
+.howto-card p {
+    color: var(--text-secondary);
+    font-size: 0.95em;
+    margin: 0;
+}
+
+.howto-card-examples {
+    margin-top: 10px !important;
+    font-size: 0.85em !important;
+    color: var(--accent-primary) !important;
+    font-style: italic;
+}
+
+/* Tip/warning callout */
+.howto-tip {
+    margin-top: 20px;
+    padding: 14px 18px;
+    background: #fffbeb;
+    border-left: 4px solid #f59e0b;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.95em;
+    color: var(--text-primary);
+}
+
+.howto-tip a {
+    color: var(--accent-primary);
+}
+
+/* Checklist */
+.howto-checklist {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.howto-checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 16px;
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.howto-check {
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent-primary);
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.howto-checklist li > div strong {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.howto-checklist li > div p {
+    color: var(--text-secondary);
+    font-size: 0.95em;
+    margin: 0;
+}
+
+/* Research grid */
+.howto-research-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.howto-research-item {
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.howto-research-icon {
+    font-size: 1.8em;
+}
+
+.howto-research-item h3 {
+    margin: 8px 0 6px;
+    font-size: 1em;
+}
+
+.howto-research-item p {
+    color: var(--text-secondary);
+    font-size: 0.95em;
+    margin: 0;
+}
+
+/* Order type cards */
+.howto-order-types {
+    display: flex;
+    gap: 16px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.howto-order-card {
+    flex: 1;
+    min-width: 200px;
+    border-radius: 8px;
+    padding: 20px;
+    border-top: 4px solid transparent;
+}
+
+.howto-order-market {
+    background: #f0fdf4;
+    border-top-color: var(--accent-primary);
+}
+
+.howto-order-limit {
+    background: #eff6ff;
+    border-top-color: var(--accent-secondary);
+}
+
+.howto-order-stop {
+    background: #fff7f7;
+    border-top-color: #ef4444;
+}
+
+.howto-order-card h3 {
+    margin-bottom: 10px;
+}
+
+.howto-order-card p {
+    color: var(--text-secondary);
+    font-size: 0.95em;
+    margin: 0;
+}
+
+.howto-order-best {
+    margin-top: 12px !important;
+    font-size: 0.85em !important;
+    font-style: italic;
+    color: var(--text-secondary);
+}
+
+/* Responsive */
+@media screen and (max-width: 950px) {
+    .howto-research-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,257 @@
+.risks-heading {
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.content > p {
+    margin-top: 12px;
+}
+
+/* Top warning banner */
+.risks-banner {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    background: #fff1f2;
+    border: 1.5px solid #fca5a5;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 24px;
+    font-size: 0.95em;
+    color: #7f1d1d;
+    line-height: 1.6;
+}
+
+.risks-banner-icon {
+    font-size: 1.6em;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* Good / bad side-by-side cards */
+.risks-cards {
+    display: flex;
+    gap: 0;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+.risks-card {
+    flex: 1;
+    padding: 20px 24px;
+}
+
+.risks-card h3 {
+    margin-bottom: 12px;
+}
+
+.risks-card ul {
+    padding-left: 20px;
+    color: var(--text-secondary);
+    line-height: 1.9;
+}
+
+.risks-card-caution ul {
+    list-style-type: circle;
+}
+
+.risks-card-safe ul {
+    list-style-type: square;
+}
+
+.risks-card-caution {
+    background: #fff7f7;
+    border-right: 1px solid var(--border-color);
+}
+
+.risks-card-safe {
+    background: #f0fdf4;
+}
+
+/* Volatility scale */
+.risks-scale {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 20px 0;
+}
+
+.risks-scale-label {
+    font-size: 0.85em;
+    color: var(--text-secondary);
+    white-space: nowrap;
+    font-style: italic;
+}
+
+.risks-scale-bar {
+    flex: 1;
+    height: 10px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #86efac, #fbbf24, #ef4444);
+    position: relative;
+}
+
+/* Fees table */
+.risks-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    font-size: 0.95em;
+}
+
+.risks-table th {
+    background: var(--bg-color);
+    padding: 10px 14px;
+    text-align: left;
+    border-bottom: 2px solid var(--border-color);
+    color: var(--text-secondary);
+    font-size: 0.85em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.risks-table td {
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    vertical-align: top;
+}
+
+.risks-table td:first-child {
+    color: var(--text-primary);
+    white-space: nowrap;
+}
+
+.risks-table td:last-child {
+    font-family: "Bungee", sans-serif;
+    font-size: 0.85em;
+    color: #ef4444;
+}
+
+.risks-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Warning callout */
+.risks-warning {
+    margin-top: 20px;
+    padding: 14px 18px;
+    background: #fff1f2;
+    border-left: 4px solid #ef4444;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.95em;
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+/* Emotional pitfalls grid */
+.risks-pitfalls {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.risks-pitfall {
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-top: 3px solid #ef4444;
+    border-radius: 0 0 8px 8px;
+    padding: 18px 20px;
+}
+
+.risks-pitfall-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.risks-pitfall-header h3 {
+    font-size: 0.95em;
+    margin: 0;
+}
+
+.risks-pitfall-icon {
+    font-size: 1em;
+    flex-shrink: 0;
+}
+
+.risks-pitfall > p {
+    color: var(--text-secondary);
+    font-size: 0.92em;
+    margin: 0 0 10px;
+}
+
+.risks-pitfall-fix {
+    font-size: 0.9em !important;
+    color: var(--accent-primary) !important;
+    margin: 0 !important;
+}
+
+/* Readiness checklist */
+.risks-checklist {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.risks-checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 16px;
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.risks-check {
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.risks-check-yes {
+    background: var(--accent-primary);
+    color: #ffffff;
+}
+
+.risks-checklist li > div strong {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.risks-checklist li > div p {
+    color: var(--text-secondary);
+    font-size: 0.92em;
+    margin: 0;
+}
+
+/* Responsive */
+@media screen and (max-width: 950px) {
+    .risks-pitfalls {
+        grid-template-columns: 1fr;
+    }
+
+    .risks-cards {
+        flex-direction: column;
+    }
+
+    .risks-card-caution {
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+    }
+}

@@ -1,0 +1,500 @@
+/*
+    Remove all default padding
+*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    /* Theme Colours */
+    --bg-color: #f8fafc;
+    --card-bg: #ffffff;
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --accent-primary: #059669; /* Emerald Green */
+    --accent-secondary: #1d4ed8; /* Strong Blue */
+    --border-color: #e2e8f0;
+
+    /* Container Sizes */
+    --ct-max-width: 1000px;
+    --ct-padding: 20px;
+    --ct-max-width-without-padding: calc(
+        var(--ct-max-width) + var(--ct-padding) * 2
+    ); /* add the left & right padding */
+}
+
+@font-face {
+    font-family: "Noto Sans";
+    src:
+        url("../fonts/NotoSans-Regular.woff2") format("woff2"),
+        url("../fonts/NotoSans-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Bungee";
+    src:
+        url("../fonts/Bungee-Regular.woff2") format("woff2"),
+        url("../fonts/Bungee-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html,
+body {
+    height: 100vh; /* Use viewport height */
+    overflow: auto; /* Prevents scrollbars initially, also prevents overscrolling on MacOS (shows white background) */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 16px;
+    background: var(--bg-color);
+    color: var(--text-primary);
+    height: 100%;
+}
+
+header,
+main > section,
+main > article,
+footer {
+    max-width: var(--ct-max-width);
+    margin: auto;
+    padding: var(--ct-padding);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 50;
+}
+
+#logo {
+    margin: 0 0 0 5px;
+    width: 320px;
+    height: 80px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav li {
+    display: block;
+    padding: 1em;
+}
+
+nav a {
+    color: var(--text-primary);
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+}
+
+nav a:hover {
+    color: var(--accent-secondary);
+}
+
+nav a.nav-active {
+    color: var(--accent-primary);
+    font-weight: bold;
+    border-bottom: 2px solid var(--accent-primary);
+}
+
+#navfocus {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.25;
+    display: none;
+    cursor: pointer;
+    z-index: 49;
+}
+
+#hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 3em;
+}
+
+/*
+    On smaller screens, move the logo above on it's own line
+*/
+@media screen and (max-width: 950px) {
+    header > nav ul {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%); /* fix the positioning to account for own dimentions */
+        flex-direction: column;
+        background: white;
+        min-width: 200px;
+        border: 1px solid #000;
+        z-index: 100;
+    }
+    #hamburger {
+        display: inline-block;
+    }
+
+    /* make the columns wrap to a single row */
+    .teasers ul {
+        flex-direction: column;
+    }
+}
+
+#hero {
+    text-align: center;
+    padding: 80px var(--ct-padding);
+    border-radius: 12px;
+    background: linear-gradient(135deg, #0f172a 0%, #064e3b 60%, #059669 100%);
+    box-shadow:
+        0 20px 60px rgba(5, 150, 105, 0.25),
+        0 4px 16px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Subtle grid pattern overlay */
+#hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+}
+
+#hero h1 {
+    color: #ffffff;
+    position: relative;
+}
+
+#hero p {
+    margin-top: var(--ct-padding);
+    font-size: 1.5em;
+    color: rgba(255, 255, 255, 0.75);
+    position: relative;
+}
+
+#hero-links {
+    margin-top: var(--ct-padding);
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+#hero-links a {
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    transition: all 0.2s ease;
+    backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.1);
+
+    /* align icon */
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#hero-links a:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+#hero-risk-btn {
+    color: red;
+    border-color: orange;
+}
+#hero-risk-btn:hover {
+    background-color: pink !important;
+    color: #000 !important;
+    border-color: red !important;
+}
+#hero-risk-btn:hover span {
+    color: #000 !important;
+}
+
+.icon-24 {
+    width: 24px;
+    height: 24px;
+}
+.icon-32 {
+    width: 32px;
+    height: 32px;
+}
+
+.basics-info-icon img,
+.about-mission-icon img,
+.howto-research-icon img,
+.risks-pitfall-icon img,
+.concepts-dividend-icon img,
+.res-card-icon img {
+    width: 1em;
+    height: 1em;
+}
+
+.icon-inline {
+    width: 1.2em;
+    height: 1.2em;
+    vertical-align: middle;
+}
+
+/*
+ * Using class for content, because we can have multiple generic blocks of content
+ */
+.content {
+    text-align: justify;
+    padding: 30px var(--ct-padding);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--card-bg);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.content > *:first-child {
+    margin-top: 0;
+}
+
+.content p {
+    margin-top: var(--ct-padding);
+    font-size: 1.2em;
+    color: var(--text-secondary);
+}
+
+main > .content + .content {
+    margin-top: calc(var(--ct-padding) / 2);
+}
+
+#newsletter {
+    text-align: center;
+}
+
+#newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: var(--ct-padding);
+    flex-wrap: wrap;
+}
+
+#newsletter input[type="email"] {
+    flex: 1;
+    max-width: 360px;
+    padding: 12px 16px;
+    border: 1.5px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 1em;
+    font-family: inherit;
+    background: var(--bg-color);
+    color: var(--text-primary);
+    transition: border-color 0.2s;
+    outline: none;
+}
+
+#newsletter input[type="email"]:focus {
+    border-color: var(--accent-primary);
+}
+
+#newsletter input[type="submit"] {
+    padding: 12px 28px;
+    border: none;
+    border-radius: 6px;
+    background: var(--accent-primary);
+    color: #ffffff;
+    font-family: "Bungee", sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#newsletter input[type="submit"]:hover {
+    background: #047857;
+}
+
+h1 {
+    font-family: "Bungee", sans-serif;
+}
+
+.teasers {
+    padding: 0;
+    max-width: var(--ct-max-width-without-padding);
+    margin: var(--ct-padding) auto;
+}
+
+.teasers ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.teasers li {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: var(--ct-padding);
+    background: var(--card-bg);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* ensures button pushes to bottom */
+}
+
+.teasers h2 {
+    text-align: left;
+}
+
+.teasers p {
+    text-align: left;
+    color: var(--text-secondary);
+    margin: 10px 0 20px 0;
+}
+
+.teasers a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    align-self: flex-start;
+    font-family: "Bungee", sans-serif;
+    text-decoration: none;
+    color: var(--accent-primary);
+    padding: 8px 18px;
+    border: 1.5px solid var(--accent-primary);
+    border-radius: 6px;
+    background: transparent;
+    font-size: 0.9em;
+    letter-spacing: 0.03em;
+    transition: all 0.2s ease;
+}
+
+.teasers a::after {
+    content: "→";
+    transition: transform 0.2s ease;
+}
+
+.teasers a:hover {
+    background: var(--accent-primary);
+    color: #ffffff;
+}
+
+.teasers a:hover::after {
+    transform: translateX(4px);
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+}
+
+footer li {
+    margin: 0 10px;
+}
+
+footer p,
+footer a {
+    color: var(--text-secondary);
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--text-primary);
+    text-decoration: underline;
+}
+
+.video-wrap {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.video-wrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+#scroll-bottom-btn {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 2px solid var(--accent-primary);
+    background: var(--card-bg);
+    color: var(--accent-primary);
+    font-size: 1.3em;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transition: background 0.2s, color 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+}
+
+#scroll-bottom-btn:hover {
+    background: var(--accent-primary);
+    color: #ffffff;
+}
+
+@media screen and (max-width: 950px) {
+    #scroll-bottom-btn {
+        display: none;
+    }
+}
+
+.references ul {
+    list-style: none;
+    padding: 0;
+}
+
+.references > ul > li {
+    margin-top: 14px;
+    color: var(--text-secondary);
+    font-size: 0.92em;
+    line-height: 1.7;
+}
+
+.references ul ul {
+    list-style: disc;
+    padding-left: 22px;
+    margin-top: 6px;
+}
+
+.references a {
+    color: var(--accent-primary);
+}

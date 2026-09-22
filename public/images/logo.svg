@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100" width="300" height="100">
+  <rect width="300" height="100" fill="transparent"/>
+
+  <text x="20" y="65" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="42" font-weight="800" fill="#1A202C">
+    Stock<tspan fill="#2D3748" font-weight="400">Intro</tspan>
+  </text>
+
+  <path d="M 25 75 
+           C 60 75, 80 55, 110 60 
+           S 150 30, 185 30 
+           L 215 30" 
+        fill="none" 
+        stroke="#10B981" 
+        stroke-width="4" 
+        stroke-linecap="round"/>
+
+  <line x1="185" y1="30" x2="205" y2="30" stroke="#10B981" stroke-width="4" stroke-linecap="round"/>
+  
+  <path d="M 210 25 L 220 30 L 210 35 Z" fill="#10B981"/>
+  
+  <g opacity="0.1" stroke="#A0AEC0" stroke-width="0.5">
+    <line x1="20" y1="20" x2="280" y2="20"/>
+    <line x1="20" y1="40" x2="280" y2="40"/>
+    <line x1="20" y1="60" x2="280" y2="60"/>
+  </g>
+</svg>

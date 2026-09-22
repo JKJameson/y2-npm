@@ -1,0 +1,250 @@
+.about-heading {
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.about-mission-row {
+    display: flex;
+    gap: 0;
+    max-width: var(--ct-max-width);
+    margin: auto;
+    padding: 0 var(--ct-padding);
+}
+
+.about-mission-row > .content {
+    flex: 1;
+}
+
+.about-references {
+    flex: 0 0 280px;
+    border-left: none;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.85em;
+}
+
+.about-references h2 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.about-references ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-references > ul > li {
+    margin-top: 10px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.about-references ul ul {
+    list-style: disc;
+    padding-left: 18px;
+    margin-top: 4px;
+}
+
+.about-references a {
+    color: var(--accent-primary);
+}
+
+.content > p {
+    margin-top: 12px;
+}
+
+/* Mission cards */
+.about-mission {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+}
+
+.about-mission-item {
+    flex: 1;
+    min-width: 180px;
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-top: 3px solid var(--accent-primary);
+    border-radius: 0 0 8px 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.about-mission-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 6px;
+}
+
+.about-mission-icon {
+    font-size: 1.6em;
+    flex-shrink: 0;
+}
+
+.about-mission-item h2 {
+    margin: 0;
+}
+
+.about-mission-item p {
+    color: var(--text-secondary);
+    font-size: 0.93em;
+    margin: 0;
+}
+
+/* Stats row */
+.about-stats {
+    display: flex;
+    gap: 0;
+    margin-top: 28px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.about-stat {
+    flex: 1;
+    min-width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 16px;
+    border-right: 1px solid var(--border-color);
+    background: var(--bg-color);
+    text-align: center;
+}
+
+.about-stat:last-child {
+    border-right: none;
+}
+
+.about-stat-number {
+    font-family: "Bungee", sans-serif;
+    font-size: 2.2em;
+    color: var(--accent-primary);
+    line-height: 1;
+}
+
+.about-stat-label {
+    font-size: 0.82em;
+    color: var(--text-secondary);
+    margin-top: 6px;
+}
+
+/* Contact form */
+.about-form {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.about-form-row {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.about-form-group {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.about-form-group label {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: var(--text-primary);
+}
+
+.about-form-group input,
+.about-form-group textarea {
+    padding: 11px 14px;
+    border: 1.5px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 1em;
+    font-family: inherit;
+    background: var(--bg-color);
+    color: var(--text-primary);
+    transition: border-color 0.2s;
+    outline: none;
+    resize: vertical;
+}
+
+.about-form-group input:focus,
+.about-form-group textarea:focus {
+    border-color: var(--accent-primary);
+}
+
+.about-form-submit {
+    align-self: flex-start;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 6px;
+    background: var(--accent-primary);
+    color: #ffffff;
+    font-family: "Bungee", sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.about-form-submit:hover {
+    background: #047857;
+}
+
+/* Find Us section background image */
+#about-find-us {
+    background-image: url('../images/logo.svg');
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    background-size: 80px;
+}
+
+/* Map */
+.about-map-wrap iframe {
+    width: 100%;
+    display: block;
+}
+
+.about-map-wrap {
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+.about-map-caption {
+    margin-top: 10px !important;
+    font-size: 0.88em;
+    color: var(--text-secondary);
+    text-align: center;
+}
+
+@media screen and (max-width: 950px) {
+    .about-mission-row {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .about-mission-row > .content {
+        max-width: var(--ct-max-width);
+        margin: auto;
+        padding: var(--ct-padding);
+    }
+
+    .about-references {
+        flex: auto;
+        border-left: 1px solid var(--border-color);
+        border-radius: 0 0 8px 8px;
+        border-top: none;
+    }
+}

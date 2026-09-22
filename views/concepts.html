@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Learn diversification, P/E ratio, dividends, charts (candlesticks), interactive glossary or quiz.">
+        <meta name="keywords" content="stock trading,intro to stock trading,concepts,diversification,p/e ratio,dividends,candlesticks,candlestick charts">
+        <title>StockIntro - Concepts</title>
+        <link rel="preload" href="fonts/NotoSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="fonts/Bungee-Regular.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/concepts.css">
+        <script src="js/site.js"></script>
+    </head>
+    <body>
+        <!-- Header Section -->
+        <header>
+            <a href="index.html"><img src="images/logo.svg" id="logo" alt="StockIntro" width="160" height="40"></a>
+            <div id="navfocus" onClick="toggleNavMenu()"><!-- Shows a gray background when small menu is toggled to focus the nav menu --></div>
+            <nav>
+                <!-- Navigation Section -->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="basics.html">Basics</a></li>
+                    <li><a href="how-to.html">How-To</a></li>
+                    <li><a href="concepts.html">Concepts</a></li>
+                    <li><a href="risks.html">Risks</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <span id="hamburger" onClick="toggleNavMenu()">&#8801;</span>
+        </header>
+        <main>
+
+            <!-- Intro -->
+            <section class="content">
+                <h1>Key Concepts</h1>
+                <p>A few core ideas come up again and again in trading. This page breaks them down, from valuing a company to reading a chart.</p>
+            </section>
+
+            <!-- Diversification -->
+            <section class="content">
+                <h2 class="concepts-heading">Diversification</h2>
+                <p>Diversification means spreading your money across <b>multiple investments</b> so that a single bad performer can't wipe out your portfolio. The old saying is: <em>"Don't put all your eggs in one basket."</em></p>
+
+                <div class="concepts-compare">
+                    <div class="concepts-compare-col concepts-compare-bad">
+                        <h3>&#10060; Not Diversified</h3>
+                        <ul>
+                            <li>100% in one stock</li>
+                            <li>If that company fails, you lose everything</li>
+                            <li>Highly exposed to sector-specific downturns</li>
+                        </ul>
+                    </div>
+                    <div class="concepts-compare-col concepts-compare-good">
+                        <h3>&#10003; Diversified</h3>
+                        <ul>
+                            <li>Spread across tech, healthcare, energy, etc.</li>
+                            <li>One bad stock has limited impact</li>
+                            <li>Smoother overall returns over time</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <aside class="concepts-note"><img src="images/icons/info-svgrepo-com.svg" alt="" class="icon-inline"> <b>Index funds</b> (like those tracking the S&amp;P 500) give you instant diversification across 500 companies in a single purchase. That's why they're popular with beginners.</aside>
+            </section>
+
+            <!-- P/E Ratio -->
+            <section class="content">
+                <h2 class="concepts-heading">The P/E Ratio</h2>
+                <p>The <b>Price-to-Earnings ratio</b> (P/E ratio) is one of the most widely used tools for valuing a stock. It tells you how much investors are willing to pay for each euro/dollar of a company's earnings.</p>
+
+                <div class="concepts-formula">
+                    <span class="concepts-formula-part">Share Price</span>
+                    <span class="concepts-formula-divider">&#247;</span>
+                    <span class="concepts-formula-part">Earnings Per Share</span>
+                    <span class="concepts-formula-divider">=</span>
+                    <span class="concepts-formula-result">P/E Ratio</span>
+                </div>
+
+                <table class="concepts-table">
+                    <thead>
+                        <tr>
+                            <th>P/E Range</th>
+                            <th>What it might mean</th>
+                            <th>Typical for</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="concepts-pe-low">Under 10</td>
+                            <td>Potentially undervalued, or the market expects decline</td>
+                            <td>Mature / struggling companies</td>
+                        </tr>
+                        <tr>
+                            <td>10 – 20</td>
+                            <td>Fairly valued, in line with average market expectations</td>
+                            <td>Established blue-chip companies</td>
+                        </tr>
+                        <tr>
+                            <td>20 – 40</td>
+                            <td>Growth premium; investors expect strong future earnings</td>
+                            <td>Growing tech companies</td>
+                        </tr>
+                        <tr>
+                            <td class="concepts-pe-high">40+</td>
+                            <td>Expensive or speculative, with high expectations baked in</td>
+                            <td>High-growth startups, AI stocks</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <aside class="concepts-note">&#9888; P/E ratio alone doesn't tell the whole story. Always compare against the company's own history and its industry peers.</aside>
+            </section>
+
+            <!-- Dividends -->
+            <section class="content">
+                <h2 class="concepts-heading">Dividends</h2>
+                <p>A <b>dividend</b> is a cash payment made by a company to its shareholders, usually from its profits. Not all companies pay dividends. Many reinvest profits into growth instead.</p>
+
+                <div class="concepts-dividend-flow">
+                    <div class="concepts-dividend-step">
+                        <span class="concepts-dividend-icon"><img src="images/icons/broker-svgrepo-com.svg" alt=""></span>
+                        <p>Company earns profit</p>
+                    </div>
+                    <span class="concepts-dividend-arrow">&#8594;</span>
+                    <div class="concepts-dividend-step">
+                        <span class="concepts-dividend-icon"><img src="images/icons/meeting-4-svgrepo-com.svg" alt=""></span>
+                        <p>Board declares dividend</p>
+                    </div>
+                    <span class="concepts-dividend-arrow">&#8594;</span>
+                    <div class="concepts-dividend-step">
+                        <span class="concepts-dividend-icon"><img src="images/icons/calendar-days-svgrepo-com.svg" alt=""></span>
+                        <p>Record date set</p>
+                    </div>
+                    <span class="concepts-dividend-arrow">&#8594;</span>
+                    <div class="concepts-dividend-step">
+                        <span class="concepts-dividend-icon"><img src="images/icons/dividend-cap-gains-svgrepo-com.svg" alt=""></span>
+                        <p>Cash paid to shareholders</p>
+                    </div>
+                </div>
+
+                <h3 class="concepts-subheading">Dividend Yield</h3>
+                <p>The <b>dividend yield</b> shows what percentage return you get from dividends relative to the share price:</p>
+
+                <div class="concepts-formula">
+                    <span class="concepts-formula-part">Annual Dividend</span>
+                    <span class="concepts-formula-divider">&#247;</span>
+                    <span class="concepts-formula-part">Share Price</span>
+                    <span class="concepts-formula-divider">&#215;</span>
+                    <span class="concepts-formula-part">100</span>
+                    <span class="concepts-formula-divider">=</span>
+                    <span class="concepts-formula-result">Yield %</span>
+                </div>
+
+                <p>For example, a stock priced at &euro;50 that pays &euro;2 per year in dividends has a yield of <b>4%</b>.</p>
+
+                <h4 class="concepts-subheading">Dividend Reinvestment Plans (DRIPs)</h4>
+                <p>Many brokers let you automatically reinvest dividends to buy more shares instead of taking the cash. Over time, this compounding effect can significantly grow your position without any extra money out of your own pocket.</p>
+            </section>
+
+            <!-- Candlestick Charts -->
+            <section class="content">
+                <h2 class="concepts-heading">Reading Candlestick Charts</h2>
+                <p>A <b>candlestick chart</b> is the most common way to display stock price movement over time. Each "candle" represents one time period (a minute, an hour, a day, etc.) and shows four key prices:</p>
+
+                <div class="concepts-candle-explainer">
+                    <div class="concepts-candle-diagram">
+                        <!-- Bullish candle -->
+                        <div class="concepts-candle-wrap">
+                            <p class="concepts-candle-label">Bullish (Green)</p>
+                            <div class="concepts-candle-svg-wrap">
+                                <img src="images/candlestick-bullish.svg" alt="Bullish candlestick diagram" width="100" height="160">
+                            </div>
+                            <p class="concepts-candle-desc">Price closed <b>higher</b> than it opened. The body spans open to close.</p>
+                        </div>
+                        <!-- Bearish candle -->
+                        <div class="concepts-candle-wrap">
+                            <p class="concepts-candle-label">Bearish (Red)</p>
+                            <div class="concepts-candle-svg-wrap">
+                                <img src="images/candlestick-bearish.svg" alt="Bearish candlestick diagram" width="100" height="160">
+                            </div>
+                            <p class="concepts-candle-desc">Price closed <b>lower</b> than it opened. Red signals a down period.</p>
+                        </div>
+                    </div>
+
+                    <div class="concepts-candle-parts">
+                        <div class="concepts-candle-part">
+                            <span class="concepts-candle-part-label">High</span>
+                            <p>The highest price reached during the period, shown by the top of the wick.</p>
+                        </div>
+                        <div class="concepts-candle-part">
+                            <span class="concepts-candle-part-label">Open</span>
+                            <p>The price at the start of the period.</p>
+                        </div>
+                        <div class="concepts-candle-part">
+                            <span class="concepts-candle-part-label">Close</span>
+                            <p>The price at the end of the period. Close vs. open determines candle colour.</p>
+                        </div>
+                        <div class="concepts-candle-part">
+                            <span class="concepts-candle-part-label">Low</span>
+                            <p>The lowest price reached, shown by the bottom of the wick.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Glossary -->
+            <section class="content">
+                <h2 class="concepts-heading">Quick Glossary</h2>
+                <p>New to the jargon? Here are the terms you'll encounter most often:</p>
+
+                <dl class="concepts-glossary">
+                    <div class="concepts-glossary-item">
+                        <dt>Bull Market</dt>
+                        <dd>A period when stock prices are rising or expected to rise. Investor confidence is high.</dd>
+                    </div>
+                    <div class="concepts-glossary-item">
+                        <dt>Bear Market</dt>
+                        <dd>A period when stock prices fall 20% or more from recent highs. Often accompanied by pessimism.</dd>
+                    </div>
+                    <div class="concepts-glossary-item">
+                        <dt>Portfolio</dt>
+                        <dd>The total collection of investments held by an individual or fund.</dd>
+                    </div>
+                    <div class="concepts-glossary-item">
+                        <dt>Volatility</dt>
+                        <dd>How much and how quickly a stock's price moves. High volatility = bigger swings, more risk.</dd>
+                    </div>
+                    <div class="concepts-glossary-item">
+                        <dt>Market Cap</dt>
+                        <dd>The total market value of a company's shares. Share Price × Total Shares = Market Cap.</dd>
+                    </div>
+                    <div class="concepts-glossary-item">
+                        <dt>Liquidity</dt>
+                        <dd>How easily a stock can be bought or sold without affecting its price. High volume = high liquidity.</dd>
+                    </div>
+                    <div class="concepts-glossary-item">
+                        <dt>Earnings Per Share (EPS)</dt>
+                        <dd>A company's profit divided by the number of shares. Higher EPS generally signals a healthier company.</dd>
+                    </div>
+                    <div class="concepts-glossary-item">
+                        <dt>IPO</dt>
+                        <dd>Initial Public Offering. When a private company sells shares to the public for the first time.</dd>
+                    </div>
+                    <div class="concepts-glossary-item">
+                        <dt>Blue-Chip Stock</dt>
+                        <dd>Shares in a large, well-established, financially stable company with a long track record.</dd>
+                    </div>
+                    <div class="concepts-glossary-item">
+                        <dt>Short Selling</dt>
+                        <dd>Borrowing shares to sell now, with the plan to buy them back cheaper later and pocket the difference.</dd>
+                    </div>
+                </dl>
+            </section>
+
+        </main>
+        <footer>
+            <p>&copy;2026 StockIntro. All Rights Reserved.</p>
+            <ul>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="#"><img src="images/icons/facebook-color-svgrepo-com.svg" class="icon-24" alt="Facebook"></a></li>
+                <li><a href="#"><img src="images/icons/twitter-1-svgrepo-com.svg" class="icon-24" alt="Twitter / X"></a></li>
+            </ul>
+        </footer>
+    </body>
+</html>

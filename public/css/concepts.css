@@ -1,0 +1,309 @@
+.concepts-heading {
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.concepts-subheading {
+    margin: 24px 0 10px;
+}
+
+.content > p {
+    margin-top: 12px;
+}
+
+/* Good / Bad comparison columns */
+.concepts-compare {
+    display: flex;
+    gap: 0;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+.concepts-compare-col {
+    flex: 1;
+    padding: 20px 24px;
+}
+
+.concepts-compare-col h3 {
+    margin-bottom: 12px;
+}
+
+.concepts-compare-col ul {
+    padding-left: 20px;
+    color: var(--text-secondary);
+    line-height: 1.9;
+}
+
+.concepts-compare-bad {
+    background: #fff7f7;
+    border-right: 1px solid var(--border-color);
+}
+
+.concepts-compare-good {
+    background: #f0fdf4;
+}
+
+/* Note / tip callout */
+.concepts-note {
+    margin-top: 20px;
+    padding: 14px 18px;
+    background: #fffbeb;
+    border-left: 4px solid #f59e0b;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.95em;
+    color: var(--text-primary);
+}
+
+/* Formula display */
+.concepts-formula {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+    padding: 20px;
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    justify-content: center;
+}
+
+.concepts-formula-part {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 8px 14px;
+    font-size: 0.95em;
+    font-weight: bold;
+    color: var(--text-primary);
+}
+
+.concepts-formula-divider {
+    font-size: 1.4em;
+    color: var(--text-secondary);
+    font-weight: bold;
+}
+
+.concepts-formula-result {
+    background: var(--accent-primary);
+    color: #ffffff;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-weight: bold;
+    font-family: "Bungee", sans-serif;
+    font-size: 0.95em;
+}
+
+/* P/E table */
+.concepts-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    font-size: 0.95em;
+}
+
+.concepts-table th {
+    background: var(--bg-color);
+    padding: 10px 14px;
+    text-align: left;
+    border-bottom: 2px solid var(--border-color);
+    color: var(--text-secondary);
+    font-size: 0.85em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.concepts-table td {
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    vertical-align: top;
+}
+
+.concepts-table td:first-child {
+    font-family: "Bungee", sans-serif;
+    font-size: 0.9em;
+    color: var(--text-primary);
+    white-space: nowrap;
+}
+
+.concepts-table tr:last-child td {
+    border-bottom: none;
+}
+
+.concepts-pe-low {
+    color: #ef4444 !important;
+}
+
+.concepts-pe-high {
+    color: #f59e0b !important;
+}
+
+/* Dividend flow */
+.concepts-dividend-flow {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 24px 0;
+    justify-content: center;
+}
+
+.concepts-dividend-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 16px 20px;
+    text-align: center;
+    min-width: 120px;
+    flex: 1;
+}
+
+.concepts-dividend-step p {
+    font-size: 0.85em;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.concepts-dividend-icon {
+    font-size: 1.8em;
+}
+
+.concepts-dividend-arrow {
+    font-size: 1.4em;
+    color: var(--text-secondary);
+    flex-shrink: 0;
+}
+
+/* Candlestick section */
+.concepts-candle-explainer {
+    display: flex;
+    gap: 40px;
+    margin-top: 24px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.concepts-candle-diagram {
+    display: flex;
+    gap: 48px;
+    flex-shrink: 0;
+}
+
+.concepts-candle-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.concepts-candle-label {
+    font-family: "Bungee", sans-serif;
+    font-size: 0.85em;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.concepts-candle-svg-wrap {
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 12px 8px 12px 12px;
+}
+
+.concepts-candle-desc {
+    font-size: 0.85em;
+    color: var(--text-secondary);
+    text-align: center;
+    max-width: 130px;
+    margin: 0;
+}
+
+.concepts-candle-parts {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 200px;
+}
+
+.concepts-candle-part {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.concepts-candle-part-label {
+    flex-shrink: 0;
+    width: 52px;
+    font-family: "Bungee", sans-serif;
+    font-size: 0.8em;
+    color: var(--accent-primary);
+    padding-top: 2px;
+}
+
+.concepts-candle-part p {
+    color: var(--text-secondary);
+    font-size: 0.95em;
+    margin: 0;
+}
+
+/* Glossary */
+.concepts-glossary {
+    margin-top: 20px;
+    column-count: 2;
+    column-gap: 40px;
+    column-rule: 1px solid var(--border-color);
+}
+
+.concepts-glossary-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border-color);
+    align-items: baseline;
+    break-inside: avoid;
+}
+
+.concepts-glossary-item:last-child {
+    border-bottom: none;
+}
+
+.concepts-glossary dt {
+    font-family: "Bungee", sans-serif;
+    font-size: 0.9em;
+    color: var(--text-primary);
+}
+
+.concepts-glossary dd {
+    color: var(--text-secondary);
+    font-size: 0.95em;
+    margin: 0;
+}
+
+/* Responsive */
+@media screen and (max-width: 950px) {
+    .concepts-glossary {
+        column-count: 1;
+    }
+
+    .concepts-candle-explainer {
+        flex-direction: column;
+    }
+
+    .concepts-dividend-flow {
+        flex-direction: column;
+    }
+
+    .concepts-dividend-arrow {
+        transform: rotate(90deg);
+    }
+}

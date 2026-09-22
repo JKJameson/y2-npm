@@ -1,0 +1,92 @@
+<!doctype html>
+<!--
+    Purpose: An introduction to stock market trading, intended for people who are interested in stock market trading and want an initial introduction.
+    Started: 11th March 2026
+ -->
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Learn how to do stock trading from the basic concepts to making your first trade.">
+        <meta name="keywords" content="stock trading,intro to stock trading,risks,newsletter,learn">
+        <title>StockInto - Home</title>
+        <link rel="preload" href="fonts/NotoSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="fonts/Bungee-Regular.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/site.js"></script>
+    </head>
+    <body>
+        <!-- Header Section -->
+        <header>
+            <a href="index.html"><img src="images/logo.svg" id="logo" alt="StockIntro" width="160" height="40"></a>
+            <div id="navfocus" onClick="toggleNavMenu()"><!-- Shows a gray background when small menu is toggled to focus the nav menu --></div>
+            <nav>
+                <!-- Navigation Section -->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="basics.html">Basics</a></li>
+                    <li><a href="how-to.html">How-To</a></li>
+                    <li><a href="concepts.html">Concepts</a></li>
+                    <li><a href="risks.html">Risks</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <span id="hamburger" onClick="toggleNavMenu()">&#8801;</span>
+        </header>
+        <main>
+            <section id="hero">
+                <h1>Your first steps into stock trading</h1>
+                <p>Guides for complete beginners, covering everything from what a stock is to placing your first trade.</p>
+                <nav id="hero-links">
+                    <a href="basics.html"><img src="images/icons/general-mandatory-svgrepo-com.svg" class="icon-32" alt=""> Start Learning</a>
+                    <a href="risks.html" id="hero-risk-btn"><img src="images/icons/warning-tsunami-hazard-zone-svgrepo-com.svg" class="icon-32" alt=""> <span>Risks</span></a>
+                </nav>
+            </section>
+            <section class="teasers">
+                <ul>
+                    <li>
+                        <h2>What is the stock market?</h2>
+                        <p>
+                            Learn what stocks are, how exchanges like the NYSE work,
+                            and what actually happens when buyers and sellers meet.
+                        </p>
+                        <a href="basics.html">Learn More</a>
+                    </li>
+                    <li>
+                        <h2>How to buy your first stock</h2>
+                        <p>
+                            A step-by-step guide covering how to choose a broker, open an account, and place your first order.
+                        </p>
+                        <a href="how-to.html">Learn More</a>
+                    </li>
+                    <li>
+                        <h2>Common risks to know</h2>
+                        <p>
+                            Volatility, hidden fees, and emotional pitfalls. Know what can go wrong before you put real money in.
+                        </p>
+                        <a href="risks.html">Learn More</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="content" id="newsletter">
+                <h2>Newsletter</h2>
+                <p>Signup to our newsletter and get all the latest trading tips and resources stright to your inbox! We will not spam you, we promise. &#128512;</p>
+                <form action="newsletter-thanks.html" method="GET">
+                    <input type="email" name="email" placeholder="you@wherever.org">
+                    <input type="submit" value="Signup">
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy;2026 StockIntro. All Rights Reserved. | This website was created as a university project.</p>
+            <ul>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="#"><img src="images/icons/facebook-color-svgrepo-com.svg" class="icon-24" alt="Facebook"></a></li>
+                <li><a href="#"><img src="images/icons/twitter-1-svgrepo-com.svg" class="icon-24" alt="Twitter / X"></a></li>
+            </ul>
+        </footer>
+    </body>
+</html>

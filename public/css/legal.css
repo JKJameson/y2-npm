@@ -1,0 +1,30 @@
+.legal-meta {
+    font-size: 0.85em;
+    color: var(--text-secondary);
+    margin-top: 6px !important;
+    margin-bottom: 20px;
+}
+
+.content > p {
+    margin-top: 12px;
+}
+
+.legal-heading {
+    margin-top: 32px;
+    margin-bottom: 10px;
+    font-size: 1.05em;
+    color: var(--text-primary);
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.legal-list {
+    margin-top: 10px;
+    padding-left: 24px;
+    color: var(--text-secondary);
+    line-height: 1.9;
+}
+
+.content a {
+    color: var(--accent-primary);
+}

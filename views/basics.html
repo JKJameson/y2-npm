@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Explains what stocks/markets are, types of exchanges (eg NYSE), buyers vs. sellers, etc.">
+        <meta name="keywords" content="stock trading,intro to stock trading,basics,stocks,markets,exchanges,buyers,sellers">
+        <title>StockIntro - Basics</title>
+        <link rel="preload" href="fonts/NotoSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="fonts/Bungee-Regular.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/basics.css">
+        <script src="js/site.js"></script>
+    </head>
+    <body>
+        <!-- Header Section -->
+        <header>
+            <a href="index.html"><img src="images/logo.svg" id="logo" alt="StockIntro" width="160" height="40"></a>
+            <div id="navfocus" onClick="toggleNavMenu()"><!-- Shows a gray background when small menu is toggled to focus the nav menu --></div>
+            <nav>
+                <!-- Navigation Section -->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="basics.html">Basics</a></li>
+                    <li><a href="how-to.html">How-To</a></li>
+                    <li><a href="concepts.html">Concepts</a></li>
+                    <li><a href="risks.html">Risks</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <span id="hamburger" onClick="toggleNavMenu()">&#8801;</span>
+        </header>
+        <main>
+
+            <!-- What is a Stock? -->
+            <section class="content">
+                <h1>Stock Market Basics</h1>
+                <p>New to investing? Start here. These are the things worth knowing before you buy your first share.</p>
+
+                <h2 class="basics-section-heading">What is a Stock?</h2>
+                <p>A <b>stock</b> (also called a <b>share</b> or <b>equity</b>) represents a small ownership stake in a company. When a company wants to raise money, it can sell pieces of itself to the public. Those pieces are stocks.</p>
+                <p>If the company grows in value, your shares become worth more. You can also earn <b>dividends</b>, which are a portion of the company's profits paid out to shareholders.</p>
+
+                <div class="basics-info-cards">
+                    <div class="basics-info-card">
+                        <div class="basics-info-card-header">
+                            <span class="basics-info-icon"><img src="images/icons/profit-svgrepo-com.svg" alt=""></span>
+                            <h3>Capital Gains</h3>
+                        </div>
+                        <p>Profit made when you sell a stock for more than you paid for it.</p>
+                    </div>
+                    <div class="basics-info-card">
+                        <div class="basics-info-card-header">
+                            <span class="basics-info-icon"><img src="images/icons/dividend-cap-gains-svgrepo-com.svg" alt=""></span>
+                            <h3>Dividends</h3>
+                        </div>
+                        <p>Regular cash payments some companies make to shareholders from their profits.</p>
+                    </div>
+                    <div class="basics-info-card">
+                        <div class="basics-info-card-header">
+                            <span class="basics-info-icon"><img src="images/icons/broker-svgrepo-com.svg" alt=""></span>
+                            <h3>Ownership</h3>
+                        </div>
+                        <p>Owning stock gives you a small stake in the company, including voting rights in some cases.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- What is the Stock Market? -->
+            <section class="content">
+                <h2 class="basics-section-heading">What is the Stock Market?</h2>
+                <p>The <b>stock market</b> is a marketplace where buyers and sellers trade shares of publicly listed companies. It's not one physical place but a network of exchanges and electronic systems operating around the world.</p>
+                <p>Prices change constantly based on supply and demand: if more people want to buy a stock than sell it, the price goes up, and vice versa.</p>
+
+                <h2 class="basics-section-heading">Major Stock Exchanges</h2>
+                <p>Stocks are traded on organised <b>exchanges</b>, which are regulated platforms that match buyers with sellers. Each exchange has its own listing requirements and trading hours.</p>
+
+                <div class="basics-exchanges">
+                    <div class="basics-exchange-card">
+                        <h3>NYSE</h3>
+                        <p class="basics-exchange-location">&#127482;&#127480; New York, USA</p>
+                        <p>The <b>New York Stock Exchange</b> is the world's largest by market capitalisation. It lists blue-chip companies like Coca-Cola, JPMorgan, and Walmart.</p>
+                    </div>
+                    <div class="basics-exchange-card">
+                        <h3>NASDAQ</h3>
+                        <p class="basics-exchange-location">&#127482;&#127480; New York, USA</p>
+                        <p>Fully electronic exchange known for its concentration of technology companies. Apple, Microsoft, Amazon, and Meta all trade here.</p>
+                    </div>
+                    <div class="basics-exchange-card">
+                        <h3>LSE</h3>
+                        <p class="basics-exchange-location">&#127468;&#127463; London, UK</p>
+                        <p>The <b>London Stock Exchange</b> is Europe's largest, listing over 1,000 companies including BP, HSBC, and AstraZeneca.</p>
+                    </div>
+                    <div class="basics-exchange-card">
+                        <h3>Euronext</h3>
+                        <p class="basics-exchange-location">&#127466;&#127482; Pan-European</p>
+                        <p>Operates across Amsterdam, Paris, Brussels, and Dublin. The main exchange for many European multinationals.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Buyers vs Sellers -->
+            <section class="content">
+                <h2 class="basics-section-heading">Buyers vs. Sellers</h2>
+                <p>Every trade has two sides: someone buying and someone selling. Their motivations are usually opposite:</p>
+
+                <div class="basics-vs">
+                    <div class="basics-vs-side basics-vs-buyer">
+                        <h3><img src="images/icons/profit-svgrepo-com.svg" alt="" class="icon-inline"> Buyers (Bulls)</h3>
+                        <ul>
+                            <li>Believe the stock price will <b>rise</b></li>
+                            <li>Looking to make a profit or earn dividends</li>
+                            <li>Increase demand, pushing prices up</li>
+                            <li>Often called <b>bullish</b> on a stock</li>
+                        </ul>
+                    </div>
+                    <div class="basics-vs-divider">VS</div>
+                    <div class="basics-vs-side basics-vs-seller">
+                        <h3><img src="images/icons/invest-svgrepo-com.svg" alt="" class="icon-inline"> Sellers (Bears)</h3>
+                        <ul>
+                            <li>Believe the stock price will <b>fall</b></li>
+                            <li>Looking to lock in gains or cut losses</li>
+                            <li>Increase supply, pushing prices down</li>
+                            <li>Often called <b>bearish</b> on a stock</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <aside class="basics-note"><img src="images/icons/info-svgrepo-com.svg" alt="" class="icon-inline"> The balance between buyers and sellers at any given moment determines the price. When buyers outnumber sellers, prices rise. When sellers dominate, prices fall.</aside>
+            </section>
+
+            <!-- Trading Day Timeline -->
+            <section class="content">
+                <h2 class="basics-section-heading">A Day in the Life of a Trading Day</h2>
+                <p>Stock markets operate on a strict schedule. Here's how a typical trading day unfolds on the NYSE (Eastern Time):</p>
+
+                <ol class="basics-timeline">
+                    <li style="padding-bottom: 110px">
+                        <span class="basics-timeline-time">4:00 AM</span>
+                        <div class="basics-timeline-body">
+                            <h3>Pre-Market Opens</h3>
+                            <p>Extended-hours trading begins. Volume is low and spreads are wide. Generally for experienced traders only.</p>
+                        </div>
+                    </li>
+                    <li style="padding-bottom: 10px" class="basics-timeline-market-start">
+                        <span class="basics-timeline-time">9:30 AM</span>
+                        <div class="basics-timeline-body">
+                            <h3>Opening Bell <img src="images/icons/bell-ringing-svgrepo-com.svg" alt="" class="icon-inline"></h3>
+                            <p>The main trading session begins. This is often the most volatile period as overnight news is priced in.</p>
+                        </div>
+                    </li>
+                    <li style="padding-bottom: 40px" class="basics-timeline-market">
+                        <span class="basics-timeline-time">10:00 AM</span>
+                        <div class="basics-timeline-body">
+                            <h3>Morning Session</h3>
+                            <p>Volatility settles. Institutional investors and fund managers are most active. High volume and tighter spreads.</p>
+                        </div>
+                    </li>
+                    <li style="padding-bottom: 60px" class="basics-timeline-market">
+                        <span class="basics-timeline-time">12:00 PM</span>
+                        <div class="basics-timeline-body">
+                            <h3>Midday Lull</h3>
+                            <p>Trading volume typically drops. Prices can drift or consolidate. A quieter period for new positions.</p>
+                        </div>
+                    </li>
+                    <li style="padding-bottom: 20px" class="basics-timeline-market">
+                        <span class="basics-timeline-time">3:00 PM</span>
+                        <div class="basics-timeline-body">
+                            <h3>Afternoon Surge</h3>
+                            <p>Volume picks back up as traders position ahead of the close. Momentum can accelerate quickly.</p>
+                        </div>
+                    </li>
+                    <li style="padding-bottom: 80px" class="basics-timeline-market-end">
+                        <span class="basics-timeline-time">4:00 PM</span>
+                        <div class="basics-timeline-body">
+                            <h3>Closing Bell <img src="images/icons/bell-ringing-svgrepo-com.svg" alt="" class="icon-inline"></h3>
+                            <p>The main session ends. The official closing price is set. Many funds rebalance at this exact moment.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="basics-timeline-time">8:00 PM</span>
+                        <div class="basics-timeline-body">
+                            <h3>After-Hours Trading</h3>
+                            <p>Extended session closes. Earnings reports released after the bell can cause big price moves here.</p>
+                        </div>
+                    </li>
+                </ol>
+            </section>
+
+            <section class="content">
+                <h2 class="basics-section-heading">Watch: How Does the Stock Market Work?</h2>
+                <p>A short animated overview of how the stock market works, from TED-Ed.</p>
+                <div class="video-wrap">
+                    <iframe src="https://www.youtube.com/embed/p7HKvqRI_Bo" title="How does the stock market work? - TED-Ed" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </section>
+
+        </main>
+        <footer>
+            <p>&copy;2026 StockIntro. All Rights Reserved.</p>
+            <ul>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="#"><img src="images/icons/facebook-color-svgrepo-com.svg" class="icon-24" alt="Facebook"></a></li>
+                <li><a href="#"><img src="images/icons/twitter-1-svgrepo-com.svg" class="icon-24" alt="Twitter / X"></a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
