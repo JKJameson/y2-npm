@@ -1,0 +1,31 @@
+<main>
+    <section class="content">
+        <h1>Message Sent</h1>
+        <p>Thanks for getting in touch! We'll get back to you as soon as we can.</p>
+        <p>Here is a summary of what you submitted:</p>
+        <div id="submitted-values" style="margin-top:16px; background:var(--bg-color); border:1px solid var(--border-color); border-radius:8px; padding:16px;">
+        </div>
+        <p style="margin-top:16px;"><a href="about.html" style="color:var(--accent-primary);">&#8592; Back to the contact form</a></p>
+    </section>
+</main>
+<script>
+    (function () {
+        var params = new URLSearchParams(window.location.search);
+        var container = document.getElementById('submitted-values');
+        var labels = { name: 'Name', email: 'Email', message: 'Message' };
+        var html = '<dl style="display:flex;flex-direction:column;gap:12px;">';
+        var found = false;
+        params.forEach(function (value, key) {
+            found = true;
+            var label = labels[key] || key;
+            html += '<div><dt style="font-weight:bold;color:var(--text-primary);">' + label + '</dt>'
+                    + '<dd style="margin-left:0;color:var(--text-secondary);">' + value + '</dd></div>';
+        });
+        html += '</dl>';
+        if (found) {
+            container.innerHTML = html;
+        } else {
+            container.innerHTML = '<p style="color:var(--text-secondary);">No form data found.</p>';
+        }
+    })();
+</script>

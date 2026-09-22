@@ -86,6 +86,13 @@ app.get('/about', (req, res) => {
     console.log('about')
   });
 
+app.get('/contact-thanks', (req, res) => {
+    state={contactThanks : true}
+    head={title:"StockIntro - Contact Thanks"}
+    res.render('contact-thanks', { state, head});
+    console.log('contact-thanks')
+  });
+
 // Start the server
 app.listen(3000, () => {
   console.log('Server is running on port 3000');
