@@ -29,7 +29,7 @@ function resetNav() {
     Highlight the current page in the nav
 */
 document.addEventListener("DOMContentLoaded", function () {
-    const currentPage = location.pathname.split("/").pop() || "index.html";
+    const currentPage = location.pathname.split("/").pop();
     document.querySelectorAll("nav a").forEach(function (link) {
         if (link.getAttribute("href") === currentPage) {
             link.classList.add("nav-active");
