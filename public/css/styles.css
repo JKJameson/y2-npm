@@ -1,3 +1,11 @@
+:root {
+    --vintage-grape: #44355bff;
+    --midnight-violet: #31263eff;
+    --shadow-grey: #221e22ff;
+    --honey-bronze: #eca72cff;
+    --spicy-paprika: #ee5622ff;
+}
+
 html, body {
     width: 90%;
     margin: 0 auto;
