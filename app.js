@@ -36,7 +36,7 @@ app.get('/', (req, res) => {
   // set active for navigation
   state={home:true}
   // set specifics for <head>
-  head={title: "Home - Week 1"}
+  head={title: "StockIntro - Home"}
   // pass object to to render in "index"
   res.render('index', {state, head});
   // send this to terminal where node app is running
@@ -44,15 +44,47 @@ app.get('/', (req, res) => {
 
 });
 
-// contact route
-app.get('/contact', (req, res) => {
-    state={contact : true}
-    head={title:"Contact - Week 1"}
-    res.render('contact', { state, head});
-    console.log('contact')
+app.get('/basics', (req, res) => {
+    state={basics : true}
+    head={title:"StockIntro - Basics"}
+    res.render('basics', { state, head});
+    console.log('basics')
   });
 
+app.get('/how-to', (req, res) => {
+    state={howTo : true}
+    head={title:"StockIntro - How-To"}
+    res.render('how-to', { state, head});
+    console.log('how-to')
+  });
 
+app.get('/concepts', (req, res) => {
+    state={concepts : true}
+    head={title:"StockIntro - Concepts"}
+    res.render('concepts', { state, head});
+    console.log('concepts')
+  });
+
+app.get('/risks', (req, res) => {
+    state={risks : true}
+    head={title:"StockIntro - Risks"}
+    res.render('risks', { state, head});
+    console.log('risks')
+  });
+
+app.get('/resources', (req, res) => {
+    state={resources : true}
+    head={title:"StockIntro - Resources"}
+    res.render('resources', { state, head});
+    console.log('resources')
+  });
+
+app.get('/about', (req, res) => {
+    state={about : true}
+    head={title:"StockIntro - About"}
+    res.render('about', { state, head});
+    console.log('about')
+  });
 
 // Start the server
 app.listen(3000, () => {
