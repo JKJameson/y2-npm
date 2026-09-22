@@ -1,8 +1,18 @@
-<nav>
-     <ul>
-          <li ><a  class='{{#if state.home}}active{{/if}}' href='/'>Home</a></li>     
-          <li><a class='{{#if state.contact}}active{{/if}}' href='contact'>Contact</a></li>
-          <li><a class='{{#if state.colors}}active{{/if}}' href='colors'>Colors</a></li>
-
-     </ul>
-</nav>
+<!-- Header Section -->
+<header>
+     <a href="index.html"><img src="images/logo.svg" id="logo" alt="StockIntro" width="160" height="40"></a>
+     <div id="navfocus" onClick="toggleNavMenu()"><!-- Shows a gray background when small menu is toggled to focus the nav menu --></div>
+     <nav>
+          <!-- Navigation Section -->
+          <ul>
+          <li><a href="/" class="{{#if state.home}}active{{/if}}">Home</a></li>
+          <li><a href="/basics" class="{{#if state.basics}}active{{/if}}">Basics</a></li>
+          <li><a href="/how-to" class="{{#if state.howTo}}active{{/if}}">How-To</a></li>
+          <li><a href="/concepts" class="{{#if state.concepts}}active{{/if}}">Concepts</a></li>
+          <li><a href="/risks" class="{{#if state.risks}}active{{/if}}">Risks</a></li>
+          <li><a href="/resources" class="{{#if state.resources}}active{{/if}}">Resources</a></li>
+          <li><a href="/about" class="{{#if state.about}}active{{/if}}">About</a></li>
+          </ul>
+     </nav>
+     <span id="hamburger" onClick="toggleNavMenu()">&#8801;</span>
+</header>
