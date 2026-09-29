@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 
 .card {
@@ -15,16 +16,19 @@
 /* Tablet */
 @media (min-width: 768px) {
     .card {
-        width: calc(50% - 30px);
+        /* 10px per box */
+        width: calc((100% - 20px) / 2);
     }
 }
 
 /* Desktop */
 @media (min-width: 1024px) {
     .card {
-        width: calc(33.333% - 30px);
+        /* 10px per box */
+        width: calc((100% - 40px) / 4);
     }
 }
+
 
 img {
     max-width: 100%;
