@@ -100,6 +100,13 @@ app.get('/newsletter-thanks', (req, res) => {
     console.log('newsletter-thanks')
   });
 
+app.get('/responsiveexample', (req, res) => {
+    state={responsiveExample : true}
+    head={title:"StockIntro - Responsive Example"}
+    res.render('responsiveexample', { state, head});
+    console.log('responsiveexample')
+  });
+
 // Start the server
 app.listen(3000, () => {
   console.log('Server is running on port 3000');
