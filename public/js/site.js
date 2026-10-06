@@ -2,6 +2,7 @@
 /*
     Hamburger navigation toggle
 */
+/*
 let isNavToggled = false;
 function toggleNavMenu() {
     let navElem = document.querySelector("nav ul");
@@ -24,10 +25,17 @@ function resetNav() {
     navFocusElem.style.display = '';
     isNavToggled = false;
 }
+*/
+const button = document.querySelector("#hamburger");
+const nav = document.querySelector("nav");
+button.addEventListener("click", () => {
+    nav.classList.toggle("show");
+});
 
 /*
     Handle page resizing
 */
+/*
 window.addEventListener("resize", function() {
     let hamElem = document.getElementById('hamburger');
     // if the hamburger menu was opened but the icon is no longer visible, the size was extended beyond the small scope
@@ -37,6 +45,7 @@ window.addEventListener("resize", function() {
         resetNav();
     }
 });
+*/
 
 /*
     Scroll-to-bottom button (large screens only; hidden via CSS on small)

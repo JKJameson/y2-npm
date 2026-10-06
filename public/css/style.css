@@ -91,7 +91,6 @@ header {
 
 nav ul {
     display: flex;
-    list-style-type: none;
 }
 
 nav li {
@@ -116,17 +115,23 @@ nav a.nav-active {
     border-bottom: 2px solid var(--accent-primary);
 }
 
-#navfocus {
-    position: fixed;
-    top: 0;
+nav.show {
+    display: block;
+    position: absolute;
+    top: 100%;
     left: 0;
     width: 100%;
-    height: 100%;
-    background: #000;
-    opacity: 0.25;
-    display: none;
-    cursor: pointer;
-    z-index: 49;
+    clear: both;
+    background: #333;
+    margin-bottom: 88888px;
+}
+
+nav.show ul {
+    display: block;
+}
+
+nav.show ul > li > a {
+    color: #fff;
 }
 
 #hamburger {
@@ -139,20 +144,16 @@ nav a.nav-active {
     On smaller screens, move the logo above on it's own line
 */
 @media screen and (max-width: 950px) {
-    header > nav ul {
-        display: none;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translateY(-50%) translateX(-50%); /* fix the positioning to account for own dimentions */
-        flex-direction: column;
-        background: white;
-        min-width: 200px;
-        border: 1px solid #000;
-        z-index: 100;
-    }
     #hamburger {
         display: inline-block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav.show > li {
+        display:block;
     }
 
     /* make the columns wrap to a single row */
