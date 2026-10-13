@@ -1,0 +1,21 @@
+<style>
+    .required::before {
+        content: "*";
+        color: red;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    label {
+        display: block;
+    }
+</style>
+
+<main>
+    <section class="content">
+        <h1>Registration Form</h1>
+        <p class="required"> This is a required field.</p>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+    </section>
+</main>

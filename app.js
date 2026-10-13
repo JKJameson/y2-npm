@@ -107,6 +107,13 @@ app.get('/responsiveexample', (req, res) => {
     console.log('responsiveexample')
   });
 
+app.get('/club', (req, res) => {
+    state={club : true}
+    head={title:"StockIntro - Club Register"}
+    res.render('club', { state, head});
+    console.log('/club')
+  });
+
 app.get('/valuessubmitted', (req, res) => {
     state={valuessubmited : true}
     console.table(req.query);
