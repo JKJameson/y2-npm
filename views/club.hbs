@@ -1,21 +1,72 @@
 <style>
-    .required::before {
+    span.required::before {
         content: "*";
         color: red;
         font-weight: bold;
-        font-size: 20px;
     }
     label {
         display: block;
+        margin-top: 15px;
     }
+    label.inline {
+        display: inline;
+        margin-top: 0;
+    }
+
 </style>
 
 <main>
     <section class="content">
         <h1>Registration Form</h1>
-        <p class="required"> This is a required field.</p>
+        <p><span class="required"></span> This is a required field.</p>
+        <br>
 
-        <label for="name">Name</label>
+        <form method="GET" action="valuessubmitted">
+
+        <label for="name"><span class="required"></span> Name</label>
         <input type="text" id="name" name="name" required>
+
+        <label for="dob"><span class="required"></span> Date of Birth</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="course"><span class="required"></span> Course</label>
+        <input type="text" id="course" name="course" required placeholder="Software Development">
+
+        <label for="year-of-study"><span class="required"></span> Year of Study</label>
+        <select id="year-of-study" name="year-of-study" required>
+            <option value="">Select Year</option>
+            <option value="1">1st Year</option>
+            <option value="2">2nd Year</option>
+            <option value="3">3rd Year</option>
+            <option value="4">4th Year</option>
+        </select>
+
+        <label for="college-id"><span class="required"></span> College ID</label>
+        <input type="text" id="college-id" name="college-id" required placeholder="S00...">@atu.ie
+
+        <label for="mobile"><span class="required"></span> Mobile</label>
+        <input type="tel" id="mobile" name="mobile" required placeholder="087 123 4567">
+
+        <label for="club-name"> Club Name</label>
+        <input type="text" id="club-name" name="club-name" placeholder="Enter Club Name">
+
+        <label for="preferred-position"><span class="required"></span> Preferred Playing Position</label>
+        <select id="preferred-position" name="preferred-position">
+            <option value="">Select Position</option>
+            <option value="goalkeeper">Goalkeeper</option>
+            <option value="defender">Defender</option>
+            <option value="midfielder">Midfielder</option>
+            <option value="forward">Forward</option>
+        </select>
+
+        <p><span class="required"></span> <input type="checkbox" id="accept-data-protection" name="accept-data-protection" required> <label for="accept-data-protection" class="inline"> I accept the <a href="/data-policy" target="_tab">Data Protection Policy</a>.</label></p>
+
+        <p><input type="checkbox" id="join-mailing" name="join-mailing"> <label for="join-mailing" class="inline"> I want to join the mailing list.</label></p>
+
+        <button type="submit">Submit Registration</button>
+
+        </form>
+
+
     </section>
 </main>
