@@ -8,10 +8,11 @@
         <form action="#" method="get">
 
         <!-- Input Box -->
-        <div class="mb-3">
-            <label for="name" class="form-label">Full Name:</label>
+        <div class="form-floating mb-3">
+            <!-- input must come before label for floating labels to work -->
             <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name">
-            <p class="form-text" id="nameHelp">Please use the name on your passport or driving licence</p>
+            <label for="name" class="form-label">Full Name</label>
+            <p class="form-text alert alert-warning" id="nameHelp">Please use the name on your passport or driving licence</p>
         </div>
 
         <!-- Password -->
