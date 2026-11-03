@@ -123,6 +123,13 @@ app.get('/valuessubmitted', (req, res) => {
     console.log('valuessubmitted')
   });
 
+  app.get('/bsform', (req, res) => {
+    state={bsform : true}
+    head={title:"StockIntro - Bootstrap Form"}
+    res.render('bsform', { state, head});
+    console.log('/bsform')
+  }); 
+
 
 
 // Start the server
