@@ -107,6 +107,31 @@ app.get('/responsiveexample', (req, res) => {
     console.log('responsiveexample')
   });
 
+app.get('/club', (req, res) => {
+    state={club : true}
+    head={title:"StockIntro - Club Register"}
+    res.render('club', { state, head});
+    console.log('/club')
+  });
+
+app.get('/valuessubmitted', (req, res) => {
+    state={valuessubmited : true}
+    console.table(req.query);
+    //console.log(json.stringify(req.query));
+    head={title:"form values"} ;
+    res.render('valuessubmitted', { state, head, data: req.query });
+    console.log('valuessubmitted')
+  });
+
+  app.get('/bsform', (req, res) => {
+    state={bsform : true}
+    head={title:"StockIntro - Bootstrap Form"}
+    res.render('bootstrapform', { state, head});
+    console.log('/bsform')
+  }); 
+
+
+
 // Start the server
 app.listen(3000, () => {
   console.log('Server is running on port 3000');
