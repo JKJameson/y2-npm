@@ -126,7 +126,7 @@ app.get('/valuessubmitted', (req, res) => {
   app.get('/bsform', (req, res) => {
     state={bsform : true}
     head={title:"StockIntro - Bootstrap Form"}
-    res.render('bsform', { state, head});
+    res.render('bootstrapform', { state, head});
     console.log('/bsform')
   }); 
 
